@@ -20,7 +20,7 @@ Este proyecto es un ejemplo de como usar docker para crear un entorno de desarro
 - Para crear una migración, ejecutar el comando `docker-compose exec web python manage.py makemigrations`
 - Para ejecutar las migraciones, ejecutar el comando `docker-compose exec web python manage.py migrate`
 - Para instalar un paquete de python, ejecutar el comando `docker-compose exec web pip install <nombre del paquete>`
-- Correr solo el servidor de django, ejecutar el comando `docker-compose exec web python manage.py runserver`
+- Correr solo el servidor de django, ejecutar el comando `docker-compose run --rm --service-port web`
 ## Uso
 - Para acceder a la aplicación web, ir a la dirección `http://localhost:8000`
 - Para acceder a la base de datos, ir a la dirección `http://localhost:5432`
